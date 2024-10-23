@@ -1,0 +1,6 @@
+TimeSeries ID,workload_identity_federation/count.iam.googleapis.com/WorkloadIdentityPoolProvider.ALIGN_RATE.REDUCE_SUM.metric.type="iam.googleapis.com/workload_identity_federation/count" resource.type="iam.googleapis.com/WorkloadIdentityPoolProvider" metric.label."result"="success".60s.pool_id:github-actions-pool.project_id:cloud-computing-435323
+pool_id,github-actions-pool
+project_id,cloud-computing-435323
+Wed Oct 23 2024 16:25:00 GMT-0400 (Eastern Daylight Time),0.0019441990699844997
+Wed Oct 23 2024 16:26:00 GMT-0400 (Eastern Daylight Time),0.020555064806635666
+Wed Oct 23 2024 16:27:00 GMT-0400 (Eastern Daylight Time),0.0441674027900465
