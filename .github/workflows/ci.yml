@@ -46,4 +46,4 @@ jobs:
         run: |
          docker build -t us-east4-docker.pkg.dev/cloud-computing-435323/assignment-3/alpine:latest .
          docker push us-east4-docker.pkg.dev/cloud-computing-435323/assignment-3/alpine:latest 
-         --> us-central1.pkg.dev/cc-fall2024/dansc0de/node-demo:v1 <--
+         --> us-central1.pkg.dev/cc-fall2024/dansc0de/node-demo:v1 <-- 
