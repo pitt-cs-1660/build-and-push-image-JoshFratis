@@ -1,0 +1,212 @@
+[
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "Frajosk@gmail.com",
+        "principalSubject": "user:Frajosk@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "136.142.159.92",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-10-23T20:23:10.777052672Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/cloud-computing-435323/locations/global/workloadIdentityPools/github-actions-pool/providers/my-repo",
+          "permission": "iam.workloadIdentityPoolProviders.update",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/cloud-computing-435323/locations/global/workloadIdentityPools/github-actions-pool/providers/my-repo",
+      "request": {
+        "updateMask": "displayName,disabled,attributeMapping,attributeCondition,oidc.issuerUri,oidc.allowedAudiences,oidc.jwksJson",
+        "@type": "type.googleapis.com/google.iam.v1.UpdateWorkloadIdentityPoolProviderRequest",
+        "workloadIdentityPoolProvider": {
+          "disabled": false,
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          },
+          "attributeMapping": {
+            "google.subject": "assertion.sub",
+            "attribute.repository_owner": "assertion.repository_owner",
+            "attribute.repository": "assertion.repository",
+            "attribute.actor": "assertion.actor"
+          },
+          "attributeCondition": "assertion.repository_owner == 'joshfratis'",
+          "displayName": "My GitHub repo Provider",
+          "name": "projects/cloud-computing-435323/locations/global/workloadIdentityPools/github-actions-pool/providers/my-repo"
+        }
+      }
+    },
+    "insertId": "hrrq46d2pbx",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "project_id": "cloud-computing-435323",
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider"
+      }
+    },
+    "timestamp": "2024-10-23T20:23:10.760668334Z",
+    "severity": "NOTICE",
+    "logName": "projects/cloud-computing-435323/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/1023626709947/locations/global/workloadIdentityPools/github-actions-pool/providers/my-repo/operations/bigarl5w4w4ameey7ge36ai000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-10-23T20:23:12.129992546Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "Frajosk@gmail.com",
+        "principalSubject": "user:Frajosk@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "resourceName": "projects/cloud-computing-435323/locations/global/workloadIdentityPools/github-actions-pool/providers/my-repo",
+      "response": {
+        "@type": "type.googleapis.com/google.longrunning.Operation",
+        "name": "projects/1023626709947/locations/global/workloadIdentityPools/github-actions-pool/providers/my-repo/operations/bigarl5w4w4ameey7ge36ai000000000"
+      }
+    },
+    "insertId": "-ym9x2sb4k",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+        "project_id": "cloud-computing-435323"
+      }
+    },
+    "timestamp": "2024-10-23T20:23:11.402423Z",
+    "severity": "NOTICE",
+    "logName": "projects/cloud-computing-435323/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/1023626709947/locations/global/workloadIdentityPools/github-actions-pool/providers/my-repo/operations/bigarl5w4w4ameey7ge36ai000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-10-23T20:23:12.233515606Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "Frajosk@gmail.com",
+        "principalSubject": "user:Frajosk@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "136.142.159.92",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-10-23T20:24:32.491780666Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/cloud-computing-435323/locations/global/workloadIdentityPools/github-actions-pool/providers/my-repo",
+          "permission": "iam.workloadIdentityPoolProviders.update",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/cloud-computing-435323/locations/global/workloadIdentityPools/github-actions-pool/providers/my-repo",
+      "request": {
+        "updateMask": "displayName,disabled,attributeMapping,attributeCondition,oidc.issuerUri,oidc.allowedAudiences,oidc.jwksJson",
+        "@type": "type.googleapis.com/google.iam.v1.UpdateWorkloadIdentityPoolProviderRequest",
+        "workloadIdentityPoolProvider": {
+          "disabled": false,
+          "attributeMapping": {
+            "attribute.repository": "assertion.repository",
+            "attribute.actor": "assertion.actor",
+            "google.subject": "assertion.sub",
+            "attribute.repository_owner": "assertion.repository_owner"
+          },
+          "displayName": "My GitHub repo Provider",
+          "name": "projects/cloud-computing-435323/locations/global/workloadIdentityPools/github-actions-pool/providers/my-repo",
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          },
+          "attributeCondition": "assertion.repository_owner == 'pitt-cs-1660'"
+        }
+      }
+    },
+    "insertId": "1pmjgsfduk2e",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+        "project_id": "cloud-computing-435323",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-10-23T20:24:32.475178220Z",
+    "severity": "NOTICE",
+    "logName": "projects/cloud-computing-435323/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/1023626709947/locations/global/workloadIdentityPools/github-actions-pool/providers/my-repo/operations/bigarafx4w4amegizd3meay000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-10-23T20:24:33.179215328Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "Frajosk@gmail.com",
+        "principalSubject": "user:Frajosk@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+      "resourceName": "projects/cloud-computing-435323/locations/global/workloadIdentityPools/github-actions-pool/providers/my-repo",
+      "response": {
+        "@type": "type.googleapis.com/google.longrunning.Operation",
+        "name": "projects/1023626709947/locations/global/workloadIdentityPools/github-actions-pool/providers/my-repo/operations/bigarafx4w4amegizd3meay000000000"
+      }
+    },
+    "insertId": "-8kjmejbcs",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.UpdateWorkloadIdentityPoolProvider",
+        "service": "iam.googleapis.com",
+        "project_id": "cloud-computing-435323"
+      }
+    },
+    "timestamp": "2024-10-23T20:24:32.946492Z",
+    "severity": "NOTICE",
+    "logName": "projects/cloud-computing-435323/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/1023626709947/locations/global/workloadIdentityPools/github-actions-pool/providers/my-repo/operations/bigarafx4w4amegizd3meay000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-10-23T20:24:33.885458833Z"
+  }
+]
