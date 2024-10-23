@@ -21,7 +21,7 @@ jobs:
         with:
          project_id: 'cloud-computing-435323' # update with your project ID
          workload_identity_provider: 'projects/123456789/locations/global/workloadIdentityPools/github/providers/my-repo' # update with your Workload Identity Pool
-# ../common/
+                                    # projects/012345678901/locations/global/workloadIdentityPools/github2/providers/dansc0de
 
       # configure/login with docker
       - name: gcloud Configure Docker
